@@ -1,4 +1,5 @@
 $(function(){
+    /*
     $("#uno").hover(function() {
         $(this).css("display", "none");
         $("#uno_t").css("display", "inline");
@@ -43,6 +44,7 @@ $(function(){
         $(this).css("display", "none");
         $("#cinque").css("display", "inline");
     });
+    */
 
     $(".menu_1").on("click", function() {
         $(".destra").css("display", "flex");
