@@ -9,7 +9,7 @@ body {
 
 /* prova per vedere se Safari stretcha ancora le foto */
 img {
-    align-items: flex-start;
+    align-self: flex-start;
 }
 
 /* colori */
