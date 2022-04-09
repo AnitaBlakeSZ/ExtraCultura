@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    border: 0;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* prova per vedere se Safari stretcha ancora le foto */
+img {
+    align-items: flex-start;
+}
+
+/* colori */
+.scuro {
+    background-color: #2a2826;
+    color: white;
+}
+
+.chiaro {
+    background-color: white;
+    color: black;
+}
+
+.marrone {
+    background-color: #7a7874;
+    color: white;
+}
+
+/* navbar */
+ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+li a {
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sinistra {
+    align-items: flex-start;
+    align-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 101;
+}
+
+.destra {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    z-index: 101;
+}
+
+.centro {
+    width: 100%;
+    z-index: 101;
+}
+
+.logo_piccolo {
+    display: block;
+    width: 79px;
+}
+
+.nudo {
+    margin: 0;
+    padding: 0;
+}
+
+.icona {
+    display: block;
+    padding: 11px;
+    width: 31px;
+}
+
+.menu_1, .menu_2 {
+    display: block;
+    float: right;
+    padding: 14px 16px;
+    width: 1.85em;
+}
+
+.menu_1:hover, .menu_2:hover {
+    background-color: #7a7874;
+    cursor: pointer;
+}
+
+.navbar:hover, .icona:hover, .active {
+    background-color: #7a7874;
+}
+
+/* fascia logo */
+.div_logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+/* testo */
+.testo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: justify;
+}
+
+h2 {
+    font-weight: lighter;
+    padding: 5px;
+    text-align: center;
+}
+
+p {
+    margin: auto;
+    padding: 5px;
+    width: 40%;
+}
+
+/* immagini */
+.div_persona {
+    display: flex;
+    justify-content: center;
+}
+
+.persona {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5%;
+    text-align: center;
+}
+
+.due {
+    width: 35%;
+}
+
+.tre {
+    width: 25%;
+}
+
+/* footer */
+.footer {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer_link {
+    color: black;
+    text-decoration: none;
+}
+
+.footer_link:hover {
+    text-decoration: underline;
+}
+
+/* media queries mobile */
+/* sotto 912px i paragrafi prendono più spazio, il logo si abbassa e prende più spazio */
+@media screen and (max-width: 912px) {
+    p {
+        width: 70%;
+    }
+
+    .div_logo {
+        margin-top: 30px;
+    }
+
+    .logo {
+        width: 90%;
+    }
+}
+
+/* sotto i 651 px il menu delle pagine collassa e appare un pulsante */
+@media screen and (max-width: 651px) {
+    .destra {
+        display: none;
+        flex-direction: column;
+    }
+}
+
+/* sopra i 650px il pulsante scompare e riappare il menu */
+@media screen and (min-width: 650px) {
+    .menu_1 {
+        display: none !important;
+    }
+
+    .menu_2 {
+        display: none !important;
+    }
+
+    .destra {
+        display: flex !important;
+    }
+}
+
+/* sotto i 500px le foto si dispongono su una colonna sola */
+@media screen and (max-width: 500px) {
+    .div_persona {
+        flex-direction: column;
+    }
+
+    .persona {
+        margin: auto;
+        width: 80%;
+    }
+}
