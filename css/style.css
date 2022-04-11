@@ -7,11 +7,6 @@ body {
     margin: 0;
 }
 
-/* prova per vedere se Safari stretcha ancora le foto */
-img {
-    align-self: flex-start;
-}
-
 /* colori */
 .scuro {
     background-color: #2a2826;
@@ -139,6 +134,7 @@ p {
 }
 
 .persona {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     padding: 2.5%;
