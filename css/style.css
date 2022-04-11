@@ -7,6 +7,10 @@ body {
     margin: 0;
 }
 
+img {
+    width: 100%;
+}
+
 /* colori */
 .scuro {
     background-color: #2a2826;
@@ -134,7 +138,6 @@ p {
 }
 
 .persona {
-    align-items: unset;
     display: flex;
     flex-direction: column;
     padding: 2.5%;
