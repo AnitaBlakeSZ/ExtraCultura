@@ -170,7 +170,7 @@ p {
 
 /* media queries mobile */
 /* sotto 912px i paragrafi prendono più spazio, il logo si abbassa e prende più spazio */
-@media screen and (max-width: 912px) {
+@media screen and (max-device-width: 912px) {
     p {
         width: 70%;
     }
@@ -185,7 +185,7 @@ p {
 }
 
 /* sotto i 651 px il menu delle pagine collassa e appare un pulsante */
-@media (max-width: 651px) {
+@media screen and (max-device-width: 651px) {
     .destra {
         display: none;
         flex-direction: column;
@@ -193,7 +193,7 @@ p {
 }
 
 /* sopra i 650px il pulsante scompare e riappare il menu */
-@media (min-width: 650px) {
+@media screen and (min-device-width: 650px) {
     .menu_1 {
         display: none !important;
     }
@@ -208,7 +208,7 @@ p {
 }
 
 /* sotto i 500px le foto si dispongono su una colonna sola */
-@media (max-width: 500px) {
+@media screen and (max-device-width: 500px) {
     .div_persona {
         flex-direction: column;
     }
