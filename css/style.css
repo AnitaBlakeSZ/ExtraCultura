@@ -3,6 +3,7 @@
 body {
     border: 0;
     font-family: "Montserrat", sans-serif;
+    font-size: 1em;
     line-height: 1.5;
     margin: 0;
 }
@@ -40,7 +41,7 @@ ul {
 
 li a {
     display: block;
-    padding: 14px 16px;
+    padding: 1em 1em;
     text-align: center;
     text-decoration: none;
 }
@@ -67,7 +68,7 @@ li a {
 
 .logo_piccolo {
     display: block;
-    width: 79px;
+    width: 5.2em;
 }
 
 .nudo {
@@ -77,15 +78,15 @@ li a {
 
 .icona {
     display: block;
-    padding: 11px;
-    width: 31px;
+    padding: 0.75em;
+    width: 2em;
 }
 
 .menu_1, .menu_2 {
     display: block;
     float: right;
-    padding: 14px 16px;
-    width: 1.85em;
+    padding: 1em 1em;
+    width: 1.8em;
 }
 
 .menu_1:hover, .menu_2:hover {
@@ -101,7 +102,7 @@ li a {
 .div_logo {
     display: flex;
     justify-content: center;
-    padding-top: 15px;
+    padding-top: 2em;
 }
 
 /* testo */
@@ -109,21 +110,21 @@ li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    padding: 20px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    padding: 1.5em;
     text-align: justify;
 }
 
 h2 {
     font-weight: lighter;
-    padding: 5px;
+    padding: 0.5em;
     text-align: center;
 }
 
 p {
     margin: auto;
-    padding: 5px;
+    padding: 0.5em;
     width: 40%;
 }
 
@@ -154,8 +155,8 @@ p {
 
 /* footer */
 .footer {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
     text-align: center;
 }
 
@@ -172,11 +173,10 @@ p {
 /* sotto 912px i paragrafi prendono più spazio, il logo si abbassa e prende più spazio */
 @media screen and (max-device-width: 912px) {
     p {
-        width: 70%;
+        width: 80%;
     }
-
     .div_logo {
-        margin-top: 30px;
+        padding-top: 4em;
     }
 
     .logo {
@@ -209,8 +209,14 @@ p {
 
 /* sotto i 500px le foto si dispongono su una colonna sola */
 @media screen and (max-device-width: 500px) {
+    body {
+        font-size: 2em;
+    }
+
     .div_persona {
         flex-direction: column;
+        padding-bottom: 1em;
+        padding-top: 1em;
     }
 
     .persona {
