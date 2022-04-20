@@ -128,6 +128,11 @@ p {
     width: 40%;
 }
 
+.testo_link {
+    color: white;
+    text-decoration: underline;
+}
+
 /* immagini */
 .div_persona {
     display: flex;
@@ -137,7 +142,7 @@ p {
 .persona {
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    margin: 5%;
     text-align: center;
 }
 
@@ -153,6 +158,14 @@ p {
     width: 100%;
 }
 
+.slideshow {
+    margin: 5% 20% 5% 20%;
+}
+
+.slide {
+    display: none;
+}
+
 /* footer */
 .footer {
     margin-bottom: 1em;
@@ -165,7 +178,7 @@ p {
     text-decoration: underline;
 }
 
-.footer_link:hover {
+.footer_link:hover, .testo_link:hover {
     text-decoration: none;
 }
 
