@@ -137,16 +137,16 @@ p {
 .persona {
     display: flex;
     flex-direction: column;
-    padding: 2.5%;
+    padding: 5%;
     text-align: center;
 }
 
 .due {
-    width: 35%;
+    width: 25%;
 }
 
 .tre {
-    width: 25%;
+    width: 20%;
 }
 
 .foto {
