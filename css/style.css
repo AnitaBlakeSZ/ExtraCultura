@@ -195,6 +195,10 @@ p {
     .logo {
         width: 90%;
     }
+
+    .slideshow {
+        margin: 5%;
+    }
 }
 
 /* sotto i 651 px il menu delle pagine collassa e appare un pulsante */
