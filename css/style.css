@@ -167,6 +167,11 @@ p {
 }
 
 /* footer */
+
+.p_footer {
+    width: 100%;
+}
+
 .footer {
     margin-bottom: 1em;
     margin-top: 0.5em;

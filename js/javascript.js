@@ -1,5 +1,5 @@
 $(function(){
-    /* gestione descrizione sulle immagini
+    //gestione descrizione sulle immagini
     $("#uno").hover(function() {
         $(this).css("display", "none");
         $("#uno_t").css("display", "inline");
@@ -44,7 +44,6 @@ $(function(){
         $(this).css("display", "none");
         $("#cinque").css("display", "inline");
     });
-    */
 
     //gestione navbar
     $(".menu_1").on("click", function() {
