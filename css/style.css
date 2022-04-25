@@ -187,6 +187,26 @@ p {
     text-decoration: none;
 }
 
+.container {
+    position: relative;
+    display: flex;
+}
+
+.descrizione {
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+    width: 85%;
+    margin: auto;
+    padding: 0;
+    text-align: justify;
+    font-size: 1.1vw;
+    display: none;
+}
+
 /* media queries mobile */
 /* sotto 912px i paragrafi prendono più spazio, il logo si abbassa e prende più spazio */
 @media screen and (max-device-width: 912px) {
