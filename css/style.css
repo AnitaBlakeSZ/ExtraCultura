@@ -251,6 +251,10 @@ p {
         display: none;
         flex-direction: column;
     }
+
+    .descrizione {
+        font-size: 1em;
+    }
 }
 
 /* sopra i 650px il pulsante scompare e riappare il menu */
@@ -285,3 +289,5 @@ p {
         width: 80%;
     }
 }
+
+
