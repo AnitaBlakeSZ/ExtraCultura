@@ -116,6 +116,16 @@ li a {
     text-align: justify;
 }
 
+.carica {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.grande {
+    font-size: 1.1em;
+}
+
 h2 {
     font-weight: lighter;
     padding: 0.5em;
@@ -130,6 +140,11 @@ p {
 
 .testo_link {
     color: white;
+    text-decoration: underline;
+}
+
+.testo_link_nero {
+    color: black;
     text-decoration: underline;
 }
 
@@ -151,7 +166,7 @@ p {
 }
 
 .tre {
-    width: 20%;
+    width: 22%;
 }
 
 .foto {
@@ -177,7 +192,7 @@ p {
 }
 
 .piccola {
-    font-size: 0.85vw;
+    font-size: 0.9vw;
 }
 
 .slideshow {
