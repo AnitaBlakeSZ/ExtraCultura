@@ -1,14 +1,22 @@
 $(function(){
 
-    $(".container").hover(
-        function() {
-            $(".foto_descr").css("opacity", "0.3");
-            $(".descrizione").css("display", "flex");
-        }, function() {
-            $(".foto_descr").css("opacity", 1);
-            $(".descrizione").css("display", "none");
-        }
-    );
+    //gestione foto
+    $("#container1").hover(Dentro, Fuori);
+    $("#container2").hover(Dentro, Fuori);
+    $("#container3").hover(Dentro, Fuori);
+    $("#container4").hover(Dentro, Fuori);
+    $("#container5").hover(Dentro, Fuori);
+
+    function Dentro() {
+        $(this).children().eq(0).css("opacity", "0.3");
+        $(this).children().eq(1).css("display", "flex");
+    }
+
+    function Fuori() {
+        $(this).children().eq(0).css("opacity", 1);
+        $(this).children().eq(1).css("display", "none");
+    }
+
     //gestione navbar
     $(".menu_1").on("click", function() {
         $(".destra").css("display", "flex");

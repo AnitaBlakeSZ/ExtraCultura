@@ -158,6 +158,28 @@ p {
     width: 100%;
 }
 
+.container {
+    display: flex;
+    position: relative;
+}
+
+.descrizione {
+    display: none;
+    font-size: 1.1vw;
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    text-align: justify;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
+    width: 85%;
+}
+
+.piccola {
+    font-size: 0.85vw;
+}
+
 .slideshow {
     margin: 5% 20% 5% 20%;
 }
@@ -185,26 +207,6 @@ p {
 
 .footer_link:hover, .testo_link:hover {
     text-decoration: none;
-}
-
-.container {
-    position: relative;
-    display: flex;
-}
-
-.descrizione {
-    position: absolute;
-    top: 50%;  /* position the top  edge of the element at the middle of the parent */
-    left: 50%; /* position the left edge of the element at the middle of the parent */
-
-    transform: translate(-50%, -50%); /* This is a shorthand of
-                                         translateX(-50%) and translateY(-50%) */
-    width: 85%;
-    margin: auto;
-    padding: 0;
-    text-align: justify;
-    font-size: 1.1vw;
-    display: none;
 }
 
 /* media queries mobile */
