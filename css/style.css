@@ -10,6 +10,10 @@ body {
     overflow-x: hidden;
 }
 
+.sito {
+    overflow-x: hidden;
+}
+
 /* colori */
 .scuro {
     background-color: #2a2826;
@@ -232,6 +236,7 @@ p {
     p {
         width: 80%;
     }
+
     .div_logo {
         padding-top: 4em;
     }
@@ -242,6 +247,11 @@ p {
 
     .slideshow {
         margin: 5%;
+    }
+
+    .p_footer {
+        width: 90%;
+        font-size: 0.7em;
     }
 }
 
@@ -285,8 +295,12 @@ p {
     }
 
     .persona {
-        margin: auto;
+        margin: 5% 10% 0 10%;
         width: 80%;
+    }
+
+    .spazio {
+        margin-bottom: 10%;
     }
 }
 
