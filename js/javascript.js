@@ -1,20 +1,39 @@
 $(function(){
+    if(!!('ontouchstart' in window)){//check for touch device
+        $("#info1").click(Click);
+        $("#info2").click(Click);
+        $("#info3").click(Click);
+        $("#info4").click(Click);
+        $("#info5").click(Click);
 
-    //gestione foto
-    $("#container1").hover(Dentro, Fuori);
-    $("#container2").hover(Dentro, Fuori);
-    $("#container3").hover(Dentro, Fuori);
-    $("#container4").hover(Dentro, Fuori);
-    $("#container5").hover(Dentro, Fuori);
+        function Click() {
+            if($(this).prev().css("display") == "none") {
+                $(this).prev().css("display", "flex");
+                $(this).prev().prev().css("opacity", "0.3");
+                $(this).css("filter", "invert(50%) sepia(6%) saturate(243%) hue-rotate(2deg) brightness(93%) contrast(94%)");
+            } else {
+                $(this).prev().css("display", "none");
+                $(this).prev().prev().css("opacity", "1");
+                $(this).css("filter", "invert(12%) sepia(16%) saturate(230%) hue-rotate(349deg) brightness(96%) contrast(89%)");
+            }
+        }
+    } else {
+        //gestione foto pc
+        $("#container1").hover(Dentro, Fuori);
+        $("#container2").hover(Dentro, Fuori);
+        $("#container3").hover(Dentro, Fuori);
+        $("#container4").hover(Dentro, Fuori);
+        $("#container5").hover(Dentro, Fuori);
 
-    function Dentro() {
-        $(this).children().eq(0).css("opacity", "0.3");
-        $(this).children().eq(1).css("display", "flex");
-    }
+        function Dentro() {
+            $(this).children().eq(0).css("opacity", "0.3");
+            $(this).children().eq(1).css("display", "flex");
+        }
 
-    function Fuori() {
-        $(this).children().eq(0).css("opacity", 1);
-        $(this).children().eq(1).css("display", "none");
+        function Fuori() {
+            $(this).children().eq(0).css("opacity", 1);
+            $(this).children().eq(1).css("display", "none");
+        }
     }
 
     //gestione navbar

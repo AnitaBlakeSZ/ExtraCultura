@@ -201,6 +201,19 @@ p {
     font-size: 0.9vw;
 }
 
+.info {
+    cursor: pointer;
+    margin: 1% 0 0 1%;
+    padding: 0;
+    position: absolute;
+    width: 15%;
+    filter: invert(12%) sepia(16%) saturate(230%) hue-rotate(349deg) brightness(96%) contrast(89%);
+}
+
+.info:hover {
+    filter: invert(50%) sepia(6%) saturate(243%) hue-rotate(2deg) brightness(93%) contrast(94%);
+}
+
 .slideshow {
     margin: 5% 20% 5% 20%;
 }
@@ -279,6 +292,10 @@ p {
 
     .destra {
         display: flex !important;
+    }
+
+    .info {
+        display: none;
     }
 }
 
