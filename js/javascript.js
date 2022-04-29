@@ -1,5 +1,7 @@
 $(function(){
-    if(!!('ontouchstart' in window)){//check for touch device
+    //gestione foto
+    if(('ontouchstart' in window)){//check for touch device
+        //gestione foto mobile
         $("#info1").click(Click);
         $("#info2").click(Click);
         $("#info3").click(Click);
@@ -48,7 +50,7 @@ $(function(){
         $(".destra").css("display", "none");
     });
 
-    //gestione slideshow pag. informazioni
+    //gestione slideshow automatico pag. informazioni
     var slideIndex = 0;
     carousel();
 
